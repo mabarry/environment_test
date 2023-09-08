@@ -79,3 +79,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add gem to manage db
 gem 'yaml_db'
+
+gem 'brakeman'
+gem 'rubocop'
