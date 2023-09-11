@@ -53,6 +53,10 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec' 
 
 end
 
@@ -72,6 +76,7 @@ group :test do
   gem "capybara", ">= 3.26"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'simplecov', :require => false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -79,3 +84,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add gem to manage db
 gem 'yaml_db'
+
+gem 'brakeman'
+gem 'rubocop'
